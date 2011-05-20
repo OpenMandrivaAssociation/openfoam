@@ -39,8 +39,10 @@ tar zxf %{SOURCE1}
 #-----------------------------------------------------------------------
 %build
 export FOAM_INST_DIR=%{_builddir}
-. etc/bashrc
-sh ./Allwmake
+pushd %{openfoam_name}
+    . etc/bashrc
+    sh ./Allwmake
+popd
 
 #-----------------------------------------------------------------------
 %install
@@ -71,7 +73,7 @@ cat > %{buildroot}%{_bindir}/%{name} << EOF
 #!/bin/sh
 
 export FOAM_INST_DIR=%{_datadir}
-export PS1="%{openfoam_name}:\$PS1"
+export PS1="%{openfoam_name}:\u@\h:\W: "
 . %{openfoam_dir}/etc/bashrc
 exec /bin/bash
 EOF
