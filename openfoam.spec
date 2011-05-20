@@ -52,7 +52,7 @@ find %{_builddir}/%{openfoam_name}/src \( -name \*.o -o -name \*.dep \) | xargs 
 %ifarch x86_64
 LIBDIR=linux64GccDPOpt
 %else
-LIBDIR=linux32GccDPOpt
+LIBDIR=linuxGccDPOpt
 %endif
 for make in `find %{_builddir}/%{openfoam_name} -name Make`; do
     rm -fr $make/$LIBDIR
