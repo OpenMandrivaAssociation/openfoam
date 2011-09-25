@@ -1,4 +1,4 @@
-%define		version		1.7.1
+%define		version		2.0.1
 %define		openfoam_name	OpenFOAM-%{version}
 %define		openfoam_dir	%{_datadir}/%{openfoam_name}
 
