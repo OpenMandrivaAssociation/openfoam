@@ -9,8 +9,8 @@ Group:		Sciences/Physics
 License:	GPL
 Summary:	OpenFOAM(r): open source CFD
 URL:		http://www.opencfd.co.uk/openfoam/
-Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-1.7.1.gtgz
-Source1:	http://downloads.sourceforge.net/foam/ThirdParty-1.7.1.gtgz
+Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-%{version}.gtgz
+Source1:	http://downloads.sourceforge.net/foam/ThirdParty-%{version}.gtgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:	gmp-devel
