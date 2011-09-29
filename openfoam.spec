@@ -65,8 +65,8 @@ cp -fpar %{_builddir}/%{openfoam_name} %{buildroot}%{_datadir}
 rm -f %{buildroot}%{openfoam_dir}/bin/tools/replaceAllShellSun
 
 # correct permissions
-find %{buildroot}%{openfoam_dir} -perm 0640 | xargs chmod 0644
-find %{buildroot}%{openfoam_dir} -perm 0750 | xargs chmod 0755
+xargs chmod 0644 | find %{buildroot}%{openfoam_dir} -perm 0640
+xargs chmod 0644 | find %{buildroot}%{openfoam_dir} -perm 0750 | xargs chmod 0755
 
 mkdir -p %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/%{name} << EOF
