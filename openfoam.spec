@@ -1,4 +1,4 @@
-%define		version		2.0.1
+%define		version		2.1.0
 %define		openfoam_name	OpenFOAM-%{version}
 %define		openfoam_dir	%{_datadir}/%{openfoam_name}
 
@@ -9,8 +9,8 @@ Group:		Sciences/Physics
 License:	GPL
 Summary:	OpenFOAM(r): open source CFD
 URL:		http://www.opencfd.co.uk/openfoam/
-Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-%{version}.gtgz
-Source1:	http://downloads.sourceforge.net/foam/ThirdParty-%{version}.gtgz
+Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
+Source1:	http://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:	gmp-devel
