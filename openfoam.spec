@@ -14,7 +14,7 @@ Release:	%mkrel 2
 Group:		Sciences/Physics
 License:	GPL
 Summary:	OpenFOAM(r): open source CFD
-URL:		http://www.opencfd.co.uk/openfoam/
+URL:		https://www.opencfd.co.uk/openfoam/
 Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
 Source1:	http://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
